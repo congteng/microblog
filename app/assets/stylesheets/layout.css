@@ -3,7 +3,6 @@ $background-color: #cff;
 $link-color: #09c;
 $visited-link-color: #069;
 
-
 .container {
   width: $full-width;
 }
@@ -15,13 +14,11 @@ body {
 header {
   padding-top: 20px;
 
-
   img {
     padding: 1em;
     background: white;
   }
 }
-
 
 section {
   margin-top: 1em;
@@ -61,6 +58,7 @@ nav {
   ul {
     margin: 0;
     padding: 0;
+
     li {
       list-style-type: none;
       display: inline-block;
@@ -73,10 +71,11 @@ nav {
         &:visited {
           color: $link-color;
         }
+
         &:hover {
           text-decoration: underline;
         }
-      }     
+      }
     }
   }
 }
@@ -114,5 +113,4 @@ footer {
   nav {
     float: none;
   }
-
 }
