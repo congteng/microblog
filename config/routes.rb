@@ -1,5 +1,8 @@
 Twitter::Application.routes.draw do
-  get "users/new"
+
+  resources :users
+
+  # get "users/new"
   match '/signup', :to => "users#new"
   # get "static_pages/home"
   # get "static_pages/help"
@@ -15,7 +18,6 @@ Twitter::Application.routes.draw do
   root :to => "static_pages#home"
   resources :microposts
 
-  resources :users
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
